@@ -18,7 +18,19 @@ function Formulario() {
       return;
     }
   };
+  if (password !== confirmPassword) {
+    setAlertMessage('Las contraseñas no coinciden');
+    setAlertType('danger');
+    return;
+  }
 
+  setNombre('');
+  setEmail('');
+  setPassword('');
+  setConfirmPassword('');
+  setAlertMessage('Registro exitoso');
+  setAlertType('success');
+};
   return (
     <form onSubmit={handleSubmit}>
       <div className="form-group">
