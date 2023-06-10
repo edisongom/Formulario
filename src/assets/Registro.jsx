@@ -10,6 +10,7 @@ function Registro() {
         <SocialButton icon="linkedin" />
         <SocialButton icon="facebook" />
         <SocialButton icon="github" />
+        <p>o usa tu email para registrarte</p>
         <Formulario />
       </Col>
     </Row>
